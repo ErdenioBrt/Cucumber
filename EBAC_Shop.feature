@@ -2,7 +2,7 @@ Funcionalidade: EBAC Shop compras
 Desejo fazer compras na EBAC Shop
 Fazer cadastro e logar na conta
 
-Cenário: Configurar prduto
+Cenário: Configurar produto
 Dado que acesse a pagina de configuração de item
 Quando eu confirmar o tamanho do item
 E escolher a cor
