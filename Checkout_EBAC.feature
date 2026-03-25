@@ -18,6 +18,9 @@ Então deve possibilitar o clique no botão Finalizar compra para concluir e mos
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail | mensagem |
     | "Joao"  | "Silva"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "Joaosilva@ebac.com" | "Checkout realizado" |
+    | "Maria"  | "Lucimar"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "marialucimar@ebac.com" | "Checkout realizado" |
+    | "Fernando"  | "Brito"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "fernandobrito@ebac.com" | "Checkout realizado" |
+    | "Selma"  | "Vieira"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "selmavieira@ebac.com" | "Checkout realizado" |
 
 Cenário: Checkout incorreto
 Dado que acesse a tela para concluir o pedido e insira dados errados
@@ -33,7 +36,11 @@ Então deve mostrar uma mensagem de erro: "E-mail incorreto"
 
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
-    | "Joao"  | "Silva"  | "Brasil"  | "Rua TempoErrado" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "Joaosilva@ebac.com" | 
+    | "Joao"  | "Silva"  | "Brasil"  | "Rua TempoErrado" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "joaosilva@ebac.com" | 
+    | "Maria"  | "Lucimar"  | "Brasil"  | "Rua Tempo" | "Gortaleza" | "00.000.000" | "(00)0 0000 0000" | "marialucimar@ebac.com" | 
+    | "Fernando"  | "Brito"  | "Bresil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "fernandobrito@ebac.com" | 
+    | "Selma"  | "Vieira"  | "Brasil"  | "Lua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "selmavieira@ebac.com" | 
+
 
 Cenário: Checkout com campos vazios
 Dado que acesse a tela para concluir o pedido com dados faltando
@@ -50,3 +57,6 @@ Então deve mostrar um alerta: "Possui campos vazios"
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
     | "Joao"  | "Silva"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "" | 
+    | "Maria"  | "Lucimar"  | "Brasil"  | "Rua Tempo" | "" | "00.000.000" | "(00)0 0000 0000" | "marialucimar@ebac.com" |
+    | "Fernando"  | "Brito"  | "Brasil"  | "" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "fernandobrito@ebac.com" |
+    | "Selma"  | "Vieira"  | ""  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "selmavieira@ebac.com" |
