@@ -1,6 +1,7 @@
 Funcionalidade: EBAC Shop compras
-Desejo fazer compras na EBAC Shop
-Fazer cadastro e logar na conta
+Como eu desejo fazer compras na EBAC Shop
+Quero configurar os produtos para colocar no carrinho
+Para finalizar a compra
 
 Cenário: Configurar produto
 Dado que acesse a pagina de configuração de item
