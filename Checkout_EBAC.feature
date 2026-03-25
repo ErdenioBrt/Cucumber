@@ -1,6 +1,7 @@
 Funcionalidade: EBAC Shop Checkout
-Desejo confirmar a compra dos produtos
-Inserir as informações para liberar a compra
+Como eu desejo finalizar a compra dos produtos
+Quero inserir as informações para liberar a compra
+Para confirmar a compra dos produtos que estão bo carrinho
 
 Esquema do Cenário: Checkout correto
 Dado que acesse a tela para concluir o pedido e insira dados corretos
@@ -14,7 +15,7 @@ E <telefone>
 E <e-mail>
 Então deve possibilitar o clique no botão Finalizar compra para concluir e mostar a mensagem: <mensagem>
 
-Examples:
+Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail | mensagem |
     | "Joao"  | "Silva"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "Joaosilva@ebac.com" | "Checkout realizado" |
 
@@ -30,7 +31,7 @@ E <telefone>
 E <e-mail>
 Então deve mostrar uma mensagem de erro: "E-mail incorreto"
 
-Examples:
+Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
     | "Joao"  | "Silva"  | "Brasil"  | "Rua TempoErrado" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "Joaosilva@ebac.com" | 
 
@@ -46,6 +47,6 @@ E <telefone>
 E <e-mail>
 Então deve mostrar um alerta: "Possui campos vazios"
 
-Examples:
+Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
     | "Joao"  | "Silva"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "" | 
