@@ -11,5 +11,6 @@ Então deve ser adicionado ao carinho sendo permitido 10 itens no maximo
 
 Cenário: Limpar as informações do produto
 Dado que o usuário queira limpar as configurações dos produtos
-Quando eu clicar no botão limpar
+Quando eu estiver com alguma configuração diferente da padrão
+E clicar em Limpar
 Então deve resetar as configurações colocadas
