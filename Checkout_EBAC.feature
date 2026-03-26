@@ -4,15 +4,9 @@ Quero inserir as informações para liberar a compra
 Para confirmar a compra dos produtos que estão bo carrinho
 
 Esquema do Cenário: Checkout correto
-Dado que acesse a tela para concluir o pedido e insira dados corretos
-Quando Quando eu digitar: <Nome>
-E <sobrenome>
-E <pais>
-E <endereco>
-E <cidade>
-E <CEP>
-E <telefone>
-E <e-mail>
+Dado que acesse a tela para concluir o pedido e insira dados corretos e os dados sejam aprovados
+Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
+E clicar em finalizar compra
 Então deve possibilitar o clique no botão Finalizar compra para concluir e mostar a mensagem: <mensagem>
 
 Exemplos:
@@ -22,16 +16,10 @@ Exemplos:
     | "Fernando"  | "Brito"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "fernandobrito@ebac.com" | "Checkout realizado" |
     | "Selma"  | "Vieira"  | "Brasil"  | "Rua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "selmavieira@ebac.com" | "Checkout realizado" |
 
-Cenário: Checkout incorreto
-Dado que acesse a tela para concluir o pedido e insira dados errados
-Quando Quando eu digitar um dado errado: <Nome>
-E <sobrenome>
-E <pais>
-E <endereco>
-E <cidade>
-E <CEP>
-E <telefone>
-E <e-mail>
+Esquema do Cenário: Checkout incorreto
+Dado que o usuário acesse a tela para concluir o pedido e insira dados e insira dados errados
+Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
+E clicar em finalizar compra
 Então deve mostrar uma mensagem de erro: "E-mail incorreto"
 
 Exemplos:
@@ -42,16 +30,10 @@ Exemplos:
     | "Selma"  | "Vieira"  | "Brasil"  | "Lua Tempo" | "Fortaleza" | "00.000.000" | "(00)0 0000 0000" | "selmavieira@ebac.com" | 
 
 
-Cenário: Checkout com campos vazios
-Dado que acesse a tela para concluir o pedido com dados faltando
-Quando Quando eu deixar de digitar um dos dados: <Nome>
-E <sobrenome>
-E <pais>
-E <endereco>
-E <cidade>
-E <CEP>
-E <telefone>
-E <e-mail>
+Esquema do Cenário: Checkout com campos vazios
+Dado que o usuário acesse a tela para concluir o pedido e insira dados, mas está faltando algum dado
+Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
+E clicar em finalizar compra
 Então deve mostrar um alerta: "Possui campos vazios"
 
 Exemplos:
