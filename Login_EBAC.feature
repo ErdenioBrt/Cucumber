@@ -4,9 +4,9 @@ Quero digitar usuário e senha
 Para ter acesso as informações de conta
 
 Esquema do Cenário: login na plataforma válido
-Dado que acesse a tela de login com dados corretos
-Quando eu digitar <usuario> 
-E senha <senha>
+Dado que o usuário acesse a tela de login com dados corretos
+Quando eu digitar <usuario> e senha
+E clicar em login
 Então deve mostrar a mensagem <mensagem>
 
 Exemplos:
@@ -17,9 +17,9 @@ Exemplos:
 
 
 Esquema do Cenário: login na plataforma inválido
-Dado que acesse a tela de login com dados incorretos
-Quando eu digitar <usuario> incorreto
-E senha <senha> incorreta
+Dado queo o usuário acesse a tela de login com dados incorretos
+Quando eu digitar <usuario> e/ou senha <senha> incorretos
+E clicar em login
 Então deve mostrar a mensagem de erro <erro>
 
 Exemplos:
