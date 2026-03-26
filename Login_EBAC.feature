@@ -5,7 +5,7 @@ Para ter acesso as informações de conta
 
 Esquema do Cenário: login na plataforma válido
 Dado que o usuário acesse a tela de login com dados corretos
-Quando eu digitar <usuario> e senha
+Quando eu digitar <usuario> e senha <senha>
 E clicar em login
 Então deve mostrar a mensagem <mensagem>
 
