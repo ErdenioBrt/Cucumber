@@ -7,7 +7,7 @@ Esquema do Cenário: Checkout correto
 Dado que acesse a tela para concluir o pedido 
 Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
 E clicar em finalizar compra
-Então deve possibilitar o clique no botão Finalizar compra para concluir,já que os dados estão corretos e mostar a mensagem: <mensagem>
+Então deve mostar a mensagem: <mensagem>
 
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail | mensagem |
@@ -20,7 +20,7 @@ Esquema do Cenário: Checkout incorreto
 Dado que o usuário acesse a tela para concluir o pedido
 Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
 E clicar em finalizar compra
-Então como os dados estã incorretos deve mostrar uma mensagem de erro: "Dados inseridos incorretamente"
+Então deve mostrar uma mensagem de erro: "Dados inseridos incorretamente"
 
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
@@ -34,7 +34,7 @@ Esquema do Cenário: Checkout com campos vazios
 Dado que o usuário acesse a tela para concluir o pedido
 Quando Quando eu digitar: <Nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <CEP>, <telefone> e <e-mail>
 E clicar em finalizar compra
-Então como tem dados faltando deve mostrar um alerta: "Possui campos vazios"
+Então deve mostrar um alerta: "Possui campos vazios"
 
 Exemplos:
     | Nome | sobrenome | pais | endereco | cidade | CEP | telefone | e-mail |
